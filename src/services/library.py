@@ -4,8 +4,8 @@ from src.models.user import User
 
 class Library:
     def __init__(self):
-        self.books: Dict[str, Book] = {}  # ISBN -> Book
-        self.users: Dict[str, User] = {}  # user_id -> User
+        self.books: Dict[str, Book] = {}  
+        self.users: Dict[str, User] = {} 
 
     def add_book(self, book: Book) -> bool:
         if book.isbn in self.books:
