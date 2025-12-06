@@ -1,6 +1,6 @@
 from typing import Dict, List, Optional
-from src.models.book import Book
-from src.models.user import User
+from models.book import Book
+from models.user import User
 
 class Library:
     def __init__(self):
