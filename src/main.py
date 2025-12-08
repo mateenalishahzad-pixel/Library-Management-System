@@ -2,10 +2,12 @@ from models.book import Book
 from models.user import User
 from services.library import Library
 
+
 def display_header():
     print("=" * 50)
     print("     Library Management System")
     print("=" * 50)
+
 
 def main():
     display_header()
@@ -83,7 +85,7 @@ def main():
             total_users = len(library.users)
             available_books = sum(1 for b in library.books.values() if b.available)
             borrowed_books = total_books - available_books
-            print(f"\nSystem Statistics:")
+            print("\nSystem Statistics:")
             print(f"Total Books: {total_books}")
             print(f"Available Books: {available_books}")
             print(f"Borrowed Books: {borrowed_books}")
@@ -93,6 +95,7 @@ def main():
             break
         else:
             print("Invalid choice. Try again.")
+
 
 if __name__ == "__main__":
     main()
