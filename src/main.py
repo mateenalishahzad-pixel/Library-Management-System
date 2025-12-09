@@ -55,7 +55,7 @@ def main():
             user_id = input("User ID: ").strip()
             isbn = input("Book ISBN: ").strip()
             if library.borrow_book(user_id, isbn):
-                print("Book borrowed.")
+                print("Book borrowed. ")
             else:
                 print("Cannot borrow book. Check availability or user ID.")
         elif choice == "5":
