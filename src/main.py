@@ -1,8 +1,16 @@
-from src.models.book import Book
-from src.models.user import User
-from src.services.library import Library
+from models.book import Book
+from models.user import User
+from services.library import Library
+
+
+def display_header():
+    print("=" * 50)
+    print("     Library Management System")
+    print("=" * 50)
+
 
 def main():
+    display_header()
     library = Library()
     print("Welcome to the Library Management System!")
     while True:
@@ -14,7 +22,7 @@ def main():
         print("5. Return Book")
         print("6. View All Books")
         print("7. View Borrowed Books")
-        print("8. Show raw hash maps (for demonstration)")
+print("8. View System Stats")
         print("0. Exit")
         choice = input("Enter your choice: ").strip()
         if choice == "1":
@@ -47,7 +55,7 @@ def main():
             user_id = input("User ID: ").strip()
             isbn = input("Book ISBN: ").strip()
             if library.borrow_book(user_id, isbn):
-                print("Book borrowed.")
+                print("Book borrowed. ")
             else:
                 print("Cannot borrow book. Check availability or user ID.")
         elif choice == "5":
@@ -73,17 +81,21 @@ def main():
             else:
                 print("No borrowed books for this user.")
         elif choice == "8":
-            print("Books hash map:")
-            for isbn, book in library.books.items():
-                print(f"ISBN: {isbn} -> {book}")
-            print("\nUsers hash map:")
-            for user_id, user in library.users.items():
-                print(f"User ID: {user_id} -> {user}")
+            total_books = len(library.books)
+            total_users = len(library.users)
+            available_books = sum(1 for b in library.books.values() if b.available)
+            borrowed_books = total_books - available_books
+            print("\nSystem Statistics:")
+            print(f"Total Books: {total_books}")
+            print(f"Available Books: {available_books}")
+            print(f"Borrowed Books: {borrowed_books}")
+            print(f"Total Users: {total_users}")
         elif choice == "0":
             print("Exiting. Goodbye!")
             break
         else:
             print("Invalid choice. Try again.")
+
 
 if __name__ == "__main__":
     main()

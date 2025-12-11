@@ -1,11 +1,12 @@
-from typing import Dict, List, Optional
-from src.models.book import Book
-from src.models.user import User
+from typing import Dict, List
+from models.book import Book
+from models.user import User
+
 
 class Library:
     def __init__(self):
-        self.books: Dict[str, Book] = {}  
-        self.users: Dict[str, User] = {} 
+        self.books: Dict[str, Book] = {}
+        self.users: Dict[str, User] = {}
 
     def add_book(self, book: Book) -> bool:
         if book.isbn in self.books:
@@ -22,8 +23,11 @@ class Library:
     def search_books(self, query: str) -> List[Book]:
         query = query.lower()
         return [
-            book for book in self.books.values()
-            if query in book.title.lower() or query in book.author.lower() or query in book.isbn
+            book
+            for book in self.books.values()
+            if query in book.title.lower()
+            or query in book.author.lower()
+            or query in book.isbn
         ]
 
     def borrow_book(self, user_id: str, isbn: str) -> bool:
