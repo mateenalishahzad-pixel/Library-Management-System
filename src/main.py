@@ -22,7 +22,7 @@ def main():
         print("5. Return Book")
         print("6. View All Books")
         print("7. View Borrowed Books")
-print("8. View System Stats")
+        print("8. View System Stats")
         print("0. Exit")
         choice = input("Enter your choice: ").strip()
         if choice == "1":
