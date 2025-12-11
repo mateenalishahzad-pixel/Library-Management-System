@@ -6,68 +6,68 @@ SEARCH ALGORITHM PERFORMANCE
 ----------------------------------------
 Algorithm       Data Size  Time (s)     Complexity  
 -----------------------------------------------------------------
-Linear Search   100        0.000324     O(n)        
-Binary Search   100        0.000028     O(log n)    
+Linear Search   100        0.000332     O(n)        
+Binary Search   100        0.000036     O(log n)    
 Hash Search     100        0.000005     O(1)        
 
-Linear Search   500        0.001455     O(n)        
-Binary Search   500        0.000139     O(log n)    
-Hash Search     500        0.000007     O(1)        
+Linear Search   500        0.001599     O(n)        
+Binary Search   500        0.000076     O(log n)    
+Hash Search     500        0.000005     O(1)        
 
-Linear Search   1000       0.003932     O(n)        
-Binary Search   1000       0.000148     O(log n)    
-Hash Search     1000       0.000004     O(1)        
+Linear Search   1000       0.001788     O(n)        
+Binary Search   1000       0.000092     O(log n)    
+Hash Search     1000       0.000002     O(1)        
 
-Linear Search   5000       0.018039     O(n)        
-Binary Search   5000       0.000859     O(log n)    
-Hash Search     5000       0.000006     O(1)        
+Linear Search   5000       0.017806     O(n)        
+Binary Search   5000       0.000405     O(log n)    
+Hash Search     5000       0.000004     O(1)        
 
-Linear Search   10000      0.035875     O(n)        
-Binary Search   10000      0.000865     O(log n)    
-Hash Search     10000      0.000004     O(1)        
+Linear Search   10000      0.037199     O(n)        
+Binary Search   10000      0.000831     O(log n)    
+Hash Search     10000      0.000005     O(1)        
 
 SORTING ALGORITHM PERFORMANCE
 ----------------------------------------
 Algorithm       Data Size  Time (s)     Complexity  
 -----------------------------------------------------------------
-Quicksort       100        0.001136     O(n log n)  
-Mergesort       100        0.000708     O(n log n)  
-Timsort         100        0.000035     O(n log n)  
+Quicksort       100        0.001455     O(n log n)  
+Mergesort       100        0.000789     O(n log n)  
+Timsort         100        0.000064     O(n log n)  
 
-Quicksort       500        0.014502     O(n log n)  
-Mergesort       500        0.002065     O(n log n)  
-Timsort         500        0.000177     O(n log n)  
+Quicksort       500        0.013841     O(n log n)  
+Mergesort       500        0.003303     O(n log n)  
+Timsort         500        0.000259     O(n log n)  
 
-Quicksort       1000       0.042826     O(n log n)  
-Mergesort       1000       0.009341     O(n log n)  
-Timsort         1000       0.000348     O(n log n)  
+Quicksort       1000       0.053752     O(n log n)  
+Mergesort       1000       0.010460     O(n log n)  
+Timsort         1000       0.000447     O(n log n)  
 
-Quicksort       5000       1.615384     O(n log n)  
-Mergesort       5000       0.046174     O(n log n)  
-Timsort         5000       0.003584     O(n log n)  
+Quicksort       5000       1.099053     O(n log n)  
+Mergesort       5000       0.055363     O(n log n)  
+Timsort         5000       0.002069     O(n log n)  
 
-Quicksort       10000      4.157001     O(n log n)  
-Mergesort       10000      0.106282     O(n log n)  
-Timsort         10000      0.006069     O(n log n)  
+Quicksort       10000      4.360553     O(n log n)  
+Mergesort       10000      0.105613     O(n log n)  
+Timsort         10000      0.004829     O(n log n)  
 
 DATA STRUCTURE PERFORMANCE
 ----------------------------------------
 Operation       Data Size  Time (s)     Complexity  
 -----------------------------------------------------------------
-Dictionary Insert 100        0.000025     O(1)        
-Dictionary Lookup 100        0.000018     O(1)        
+Dictionary Insert 100        0.000024     O(1)        
+Dictionary Lookup 100        0.000019     O(1)        
 
-Dictionary Insert 500        0.000109     O(1)        
+Dictionary Insert 500        0.000124     O(1)        
 Dictionary Lookup 500        0.000016     O(1)        
 
-Dictionary Insert 1000       0.000377     O(1)        
-Dictionary Lookup 1000       0.000023     O(1)        
+Dictionary Insert 1000       0.000292     O(1)        
+Dictionary Lookup 1000       0.000017     O(1)        
 
-Dictionary Insert 5000       0.001001     O(1)        
-Dictionary Lookup 5000       0.000012     O(1)        
+Dictionary Insert 5000       0.001207     O(1)        
+Dictionary Lookup 5000       0.000021     O(1)        
 
-Dictionary Insert 10000      0.005427     O(1)        
-Dictionary Lookup 10000      0.000024     O(1)        
+Dictionary Insert 10000      0.005504     O(1)        
+Dictionary Lookup 10000      0.000020     O(1)        
 
 PERFORMANCE ANALYSIS SUMMARY
 ----------------------------------------

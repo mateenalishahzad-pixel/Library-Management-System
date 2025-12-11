@@ -1,6 +1,6 @@
 from typing import Dict, List
-from models.book import Book
-from models.user import User
+from src.models.book import Book
+from src.models.user import User
 
 
 class Library:
