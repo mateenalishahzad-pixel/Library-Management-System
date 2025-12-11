@@ -14,6 +14,7 @@ def main():
         print("5. Return Book")
         print("6. View All Books")
         print("7. View Borrowed Books")
+        print("8. Show raw hash maps (for demonstration)")
         print("0. Exit")
         choice = input("Enter your choice: ").strip()
         if choice == "1":
@@ -71,6 +72,13 @@ def main():
                     print(b)
             else:
                 print("No borrowed books for this user.")
+        elif choice == "8":
+            print("Books hash map:")
+            for isbn, book in library.books.items():
+                print(f"ISBN: {isbn} -> {book}")
+            print("\nUsers hash map:")
+            for user_id, user in library.users.items():
+                print(f"User ID: {user_id} -> {user}")
         elif choice == "0":
             print("Exiting. Goodbye!")
             break
